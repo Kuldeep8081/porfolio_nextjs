@@ -23,31 +23,31 @@ const Navbar = () => {
           {/* Desktop Links */}
           <div className="hidden md:flex justify-center items-center gap-3 lg:gap-8">
             <Link
-              href="#"
+              href="/"
               className="text-sm lg:text-lg font-semibold tracking-tight hover:underline underline-offset-1 hover:decoration-purple-300 hover:text-purple-300"
             >
               Home
             </Link>
             <Link
-              href="#"
+              href="services"
               className="text-sm lg:text-lg font-semibold tracking-tight hover:underline underline-offset-1 hover:decoration-purple-300 hover:text-purple-300"
             >
               Services
             </Link>
             <Link
-              href="#"
+              href="/projects"
               className="text-sm lg:text-lg font-semibold tracking-tight hover:underline underline-offset-1 hover:decoration-purple-300 hover:text-purple-300"
             >
               Our Works
             </Link>
             <Link
-              href="#"
+              href="/about"
               className="text-sm lg:text-lg font-semibold tracking-tight hover:underline underline-offset-1 hover:decoration-purple-300 hover:text-purple-300"
             >
               About Me
             </Link>
 
-            <Link href="#">
+            <Link href="/contact">
               <span className="animate-pulse inset-ring-2 bg-linear-to-b from-purple-700 to-purple-900 py-1 px-6 rounded-2xl text-sm lg:text-lg font-semibold tracking-tight hover:scale-105 duration-100 hover:shadow-lg hover:shadow-purple-400 inline-block">
                 Contact Us
               </span>
@@ -72,35 +72,35 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="flex flex-col gap-3 items-center py-10">
               <Link
-                href="#"
+                href="/"
                 onClick={handleClose}
                 className="text-lg font-semibold tracking-tight hover:underline underline-offset-1 hover:decoration-purple-300 hover:text-purple-300"
               >
                 Home
               </Link>
               <Link
-                href="#"
+                href="/services"
                 onClick={handleClose}
                 className="text-lg font-semibold tracking-tight hover:underline underline-offset-1 hover:decoration-purple-300 hover:text-purple-300"
               >
                 Services
               </Link>
               <Link
-                href="#"
+                href="/projects"
                 onClick={handleClose}
                 className="text-lg font-semibold tracking-tight hover:underline underline-offset-1 hover:decoration-purple-300 hover:text-purple-300"
               >
                 Our Works
               </Link>
               <Link
-                href="#"
+                href="/about"
                 onClick={handleClose}
                 className="text-lg font-semibold tracking-tight hover:underline underline-offset-1 hover:decoration-purple-300 hover:text-purple-300"
               >
                 About Me
               </Link>
 
-              <Link href="#" onClick={handleClose}>
+              <Link href="/contact" onClick={handleClose}>
                 <span className="animate-pulse inset-ring-2 bg-linear-to-b from-purple-700 to-purple-900 py-1 px-6 rounded-2xl text-2xl font-semibold tracking-tight hover:scale-105 duration-100 hover:shadow-lg hover:shadow-purple-400 inline-block">
                   Contact Us
                 </span>

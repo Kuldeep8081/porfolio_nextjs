@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 import Image from 'next/image'
 import { motion } from "framer-motion";
 import Link from 'next/link';
-import { Instagram, Linkedin } from 'lucide-react';
+import {  Code2Icon,Linkedin } from 'lucide-react';
 
 const HeroSection = () => {
     return (
@@ -66,9 +66,9 @@ const HeroSection = () => {
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.7, delay: 0.4 }}
                         >
-                            <button className="animate-pulse inset-ring-2 px-6 py-2 rounded-full bg-purple-600 hover:bg-purple-700 text-sm md:text-base font-semibold text-white shadow-md hover:shadow-lg hover:scale-105 transition-transform">
+                            <Link href="https://github.com/Kuldeep8081" className="animate-pulse inset-ring-2 px-6 py-2 rounded-full bg-purple-600 hover:bg-purple-700 text-sm md:text-base font-semibold text-white shadow-md hover:shadow-lg hover:scale-105 transition-transform">
                                 View My Projects
-                            </button>
+                            </Link>
                         </motion.div>
                         <motion.div
                             className="flex flex-wrap items-center gap-4 pt-2"
@@ -76,9 +76,13 @@ const HeroSection = () => {
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.7, delay: 0.4 }}
                         >
-                            <button className="animate-pulse inset-ring-2 px-6 py-2 rounded-full bg-purple-600 hover:bg-purple-700 text-sm md:text-base font-semibold text-white shadow-md hover:shadow-lg hover:scale-105 transition-transform">
-                                Download CV
-                            </button>
+                        <a 
+                            href="https://drive.google.com/file/d/12q6N86qqQyxah8FV4uTlGZ17zNi0WLsA/view?usp=sharing" 
+                            download="resume.pdf"
+                            className="inline-block text-center animate-pulse inset-ring-2 px-6 py-2 rounded-full bg-purple-600 hover:bg-purple-700 text-sm md:text-base font-semibold text-white shadow-md hover:shadow-lg hover:scale-105 transition-transform"
+                        >
+                            Download CV
+                        </a>
                         </motion.div>
                     </div>
                     <motion.div
@@ -87,15 +91,15 @@ const HeroSection = () => {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.7, delay: 0.5 }}
                     >
-                        <Link href="#"
+                        <Link href="https://www.linkedin.com/in/kuldeep-kumar-4513a8222/"
                             className='inset-ring-2 inset-ring-purple-900 bg-purple-100 text-purple-600 p-3 rounded-full shadow-sm shadow-purple-950 hover:shadow-xl hover:scale-105 duration-100 transition-transform '
                         >
                             <Linkedin size={29} className='animate-bounce' />
                         </Link>
-                        <Link href="#"
+                        <Link href="https://leetcode.com/u/hacker_kuldeep/"
                             className='inset-ring-2 inset-ring-purple-900 bg-purple-100 text-purple-600 p-3 rounded-full shadow-sm shadow-purple-950 hover:shadow-xl hover:scale-105 duration-100 transition-transform'
                         >
-                            <Instagram size={29} className='animate-bounce' />
+                            <Code2Icon size={29} className='animate-bounce' />
                         </Link>
                     </motion.div>
                 </div>
